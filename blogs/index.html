@@ -1,92 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Archive | Andrew Lowe</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
-        body { font-family: 'Inter', sans-serif; }
-    </style>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Writing and analysis on GRC, FedRAMP, and security automation by Andrew Lowe.">
+    <title>Writing | Andrew Lowe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="../assets/css/site.css">
 </head>
-<body class="bg-emerald-950 text-emerald-50 antialiased">
-
-    <!-- Navigation -->
-    <nav class="sticky top-0 z-50 bg-emerald-950/80 backdrop-blur-md border-b border-emerald-800/50">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16 items-center">
-                <div class="flex items:center">
-                    <a href="../index.html" class="text-xl font-bold text-purple-400 tracking-tight">AL</a>
-                </div>
-                <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
-                    <a href="../index.html" class="text-emerald-100 hover:text-purple-400 px-3 py-2 text-sm font-medium transition-colors">Main</a>
-                    <a href="../blogs/" class="text-purple-400 px-3 py-2 text-sm font-medium border-b-2 border-purple-400 transition-colors">Blogs</a>
-                    <a href="../projects/" class="text-emerald-100 hover:text-purple-400 px-3 py-2 text-sm font-medium transition-colors">Projects</a>
-                    <a href="../resume/" class="text-emerald-100 hover:text-purple-400 px-3 py-2 text-sm font-medium transition-colors">Resume</a>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Page Header -->
-    <header class="py-16">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 class="text-4xl md:text-5xl font-extrabold text-white tracking-tight mb-4">Insights & Analysis</h1>
-            <p class="text-lg text-emerald-200/70 max-w-2xl mx-auto">Deep dives into GRC, FedRAMP, and Security Automation.</p>
-        </div>
-    </header>
-
-    <!-- Blog List -->
-    <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div class="max-w-3xl mx-auto">
-            <div id="blog-list" class="space-y-8">
-                
-                <!-- Placeholder Post 1 -->
-                <article class="bg-emerald-90/40 border border-emerald-800/50 p-8 rounded-2xl hover:border-purple-500/50 transition-all group">
-                    <div class="flex items-center text-sm font-semibold mb-2">
-                        <span class="text-purple-400">Compliance</span>
-                        <span class="mx-2 text-emerald-700">•</span>
-                        <span class="text-emerald-500/70">August 2025</span>
-                    </div>
-                    <h2 class="text-2xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors">
-                        <a href="#">Navigating the FedRAMP 2.0 Landscape</a>
-                    </h2>
-                    <p class="text-emerald-200/60 leading-relaxed mb-4">
-                        An exploration of the recent changes in the FedRAMP authorization process and what they mean for cloud service providers...
-                    </p>
-                    <a href="#" class="text-purple-400 font-medium hover:text-purple-300 transition-colors">&rarr; Read Article</a>
-                </article>
-
-                <!-- Placeholder Post 2 -->
-                <article class="bg-emerald-9/40 border border-embed-800/50 p-8 rounded-2xl hover:border-purple-500/50 transition-all group">
-                    <div class="flex items-center text-sm font-semibold mb-2">
-                        <span class="text-purple-400">Automation</span>
-                        <span class="mx-2 text-emerald-700">•</span>
-                        <span class="text-emerald-500/70">July 2025</span>
-                    </div>
-                    <h2 class="text-2xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors">
-                        <a href="#">Automating NIST SP 800-53 Control Mapping with Python</a>
-                    </h2>
-                    <p class="text-emerald-200/60 leading-relaxed mb-4">
-                        How I used Python and basic LLM integration to streamline the mapping process between vulnerabilities and security controls...
-                    </p>
-                    <a href="#" class="text-purple-400 font-medium hover:text-purple-300 transition-colors">&rarr; Read Article</a>
-                </article>
-
-            </div>
-
-            <!-- Empty State -->
-            <div id="empty-state" class="hidden text-center py-20">
-                <p class="text-emerald-500/70 italic text-lg">No blog posts published yet. Stay tuned!</p>
-            </div>
-        </div>
-    </main>
-
-    <!-- Footer -->
-    <footer class="border-t border-emerald-800/50 py-12 mt-20 text-center text-emerald-700 text-sm">
-        <p>&copy; 2026 Andrew Lowe. Engineered for Security.</p>
-    </footer>
-
-</body>
-</html>
+<body><header class="site-header"><nav class="container nav" aria-label="Primary navigation"><a class="brand" href="../"><span class="brand-mark">AL</span><span class="brand-name">Andrew Lowe</span></a><button class="menu-button" id="mobile-menu-button" aria-expanded="false" aria-controls="site-nav">Menu</button><div class="nav-links" id="site-nav"><a href="../">About</a><a href="../projects/">Projects</a><a class="active" href="./">Writing</a><a href="../resume/">Resume</a></div></nav></header>
+<main><header class="page-intro"><div class="container"><p class="eyebrow">Notes from the field</p><h1>Writing about the work.</h1><p>Ideas on compliance, security programs, and the practical automation that keeps them moving.</p></div></header><section class="section"><div class="container"><div class="blog-list"><article class="blog-card reveal"><div class="eyebrow">Compliance · August 2025</div><h2><a href="#">Navigating the FedRAMP 2.0 landscape</a></h2><p>An exploration of changes in the FedRAMP authorization process and what they mean for cloud service providers building durable programs.</p><a class="blog-link" href="#">Read article <span aria-hidden="true">↗</span></a></article><article class="blog-card reveal delay"><div class="eyebrow">Automation · July 2025</div><h2><a href="#">Automating NIST SP 800-53 control mapping with Python</a></h2><p>How Python and basic LLM integration can streamline the work of connecting vulnerabilities, evidence, and the controls meant to address them.</p><a class="blog-link" href="#">Read article <span aria-hidden="true">↗</span></a></article></div></div></section></main>
+<footer class="site-footer"><div class="container footer-inner"><span>© 2026 Andrew Lowe</span><span>GRC, security, and systems thinking</span></div></footer><script src="../assets/js/main.js"></script></body></html>
