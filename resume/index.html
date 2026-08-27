@@ -8,21 +8,6 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
         body { font-family: 'Inter', sans-serif; }
-        .timeline-line::before {
-            content: '';
-            position: absolute;
-            left: 20px;
-            top: 0;
-            bottom: 0;
-            width: 2px;
-            background: #064e3b; /* emerald-900 */
-        }
-        @media (min-width: 768px) {
-            .timeline-line::before {
-                left: 50%;
-                transform: translateX(-50%);
-            }
-        }
     </style>
 </head>
 <body class="bg-emerald-950 text-emerald-50 antialiased">
@@ -37,7 +22,7 @@
                 <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
                     <a href="../index.html" class="text-emerald-100 hover:text-purple-400 px-3 py-2 text-sm font-medium transition-colors">Main</a>
                     <a href="../projects/index.html" class="text-emerald-100 hover:text-purple-400 px-3 py-2 text-sm font-medium transition-colors">Projects</a>
-                    <a href="../blogs/index.html" class="text-emerald-100 hover:text-purple-400 px-3 py-2 text-sm font-medium transition-colors">Blogs</a>
+                    <a href="../blogs/index:html" class="text-emerald-100 hover:text-purple-400 px-3 py-2 text-sm font-medium transition-colors">Blogs</a>
                     <a href="../resume/index.html" class="text-purple-400 px-3 py-2 text-sm font-medium border-b-2 border-purple-400 transition-colors">Resume</a>
                 </div>
             </div>
@@ -45,15 +30,10 @@
     </nav>
 
     <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        
-        <!-- Hero Section -->
+        <!-- Header Section -->
         <header class="text-center mb-16">
-            <h1 class="text-4xl md:text-scale font-extrabold text-white tracking-tight sm:text-5xl">
-                Andrew Lowe
-            </h1>
-            <p class="mt-4 text-xl text-purple-400 font-semibold uppercase tracking-widest">
-                CISSP • CCSP • GRC Expert
-            </p>
+            <h1 class="text-4xl md:text-5xl font-extrabold text-white tracking-tight">Andrew Lowe</h1>
+            <p class="mt-4 text-xl text-purple-400 font-semibold uppercase tracking-widest">CISSP • CCSP • GRC Expert</p>
             <div class="mt-6 flex justify-center space-x-4 text-emerald-500/70 text-sm">
                 <span>Forest, VA</span>
                 <span class="text-emerald-800">•</span>
@@ -63,7 +43,7 @@
             </div>
         </header>
 
-        <!-- Professional Profile Card -->
+        <!-- Profile Summary Card -->
         <section class="bg-emerald-900/40 rounded-2xl shadow-sm border border-emerald-800/50 p-8 mb-16">
             <h2 class="text-2xl font-bold text-white mb-4">Professional Profile</h2>
             <p class="text-lg text-emerald-200/70 leading-relaxed">
@@ -73,97 +53,86 @@
                 <span class="text-purple-400 font-medium">NIST, FISMA, CSF, FedRAMP, CMMC,</span> and 
                 <span class="text-purple-400 font-medium">HIPAA</span> frameworks.
             </p>
-            
-            <!-- Framework Badges -->
             <div class="mt-8 flex flex-wrap gap-2">
-                <span class="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-sm font-medium border border-purple-500/30">FedRAMP</span>
+                <span class="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-sm font-medium border border-multipart/30">FedRAMP</span>
                 <span class="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-sm font-medium border border-purple-500/30">NIST CSF</span>
                 <span class="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-sm font-medium border border-purple-500/30">FISMA</span>
                 <span class="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-sm font-medium border border-purple-500/30">CMMC</span>
                 <span class="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-sm font-medium border border-purple-500/30">HIPAA</span>
                 <span class="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-sm font-medium border border-purple-500/30">PCI-DSS</span>
-                <span class="px:px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-sm font-medium border border-purple-500/30">ISO</span>
+                <span class="px-3 py:py-1 bg-purple-500/20 text-purple-300 rounded-full text-sm font-medium border border-purple-50%30">ISO</span>
             </div>
         </section>
 
-        <!-- Experience Timeline -->
+        <!-- Experience Stream (The "Anti-Timeline") -->
         <section class="mb-16">
-            <h2 class="text-3xl font-bold text-white mb-12 text-center">Professional Experience</h2>
-            <div class="relative timeline-line">
-                
-                <!-- TalaTek (Present) -->
-                <div class="mb-12 flex flex-col md:flex-row items-center w-full">
-                    <div class="hidden md:block w-1/2 px-8 text-right pr-12"></div>
-                    <div class="z-10 bg-purple-500 w-10 h-10 rounded-full flex items-center justify-center border-4 border-emerald-950 shadow-sm">
-                        <span class="text-white text-xs font-bold">✓</span>
-                    </div>
-                    <div class="w-full md:w-1/2 pl-12 pr-0 md:pr-8">
-                        <div class="bg-emerald-90int/40 p-6 rounded-xl shadow-sm border border-emerald-800/50 hover:border-purple-500 transition-all group">
-                            <span class="text-sm font-semibold text-purple-400 uppercase tracking-wider">08/2020 – Present</span>
-                            <h3 class="text-xl font-bold text-white mt-1 group-hover:text-purple-400 transition-colors">Manager, Frameworks & Certifications</h3>
-                            <p class="text-emerald-500/70 font-medium mb-4">TalaTek (subsidiary of CISO Global)</p>
-                            <ul class="space-y-3 text-emerald-200/60 text-sm list-disc pl-4 leading-relaxed">
-                                <li><strong class="text-white">Compliance Leadership:</strong> ISSPO for two FedRAMP moderate/Class C programs, overseeing security protocols and ensuring mission-critical compliance.</li>
-                                <li class="italic"><span class="text-emerald-300/80 text-sm">vCISO support for clients meeting HIPAA and FISMA requirements.</span></li>
-                                <li><strong class="text-white">Assessments & Advisory:</strong> Lead/Sr. Assessor for FedRAMP 3PAO assessments, advisory services, and continuous monitoring support.</li>
-                                <li><strong class="text-white">Technical Innovation:</strong> Spearheading AI use case research to integrate LLMs into the TiGRIS GRC platform; developed Python automation for vulnerability analysis.</li>
-                            </ul>
+            <h2 class="text-3xl font-bold text-white mb-8">Professional Journey</h2>
+            <div class="space-y-6">
+                <!-- TalaTek Card -->
+                <div class="bg-emerald-900/40 border-l-4 border-purple-500 p-8 rounded-r-xl shadow-sm transition-all hover:bg-emerald-900/60 group">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-2 mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-white group-hover:text-purple-400 transition-colors">Manager, Frameworks & Certifications</h3>
+                            <p class="text-emerald-500/70 font-medium">TalaTek (subsidiary of CISO Global)</p>
                         </div>
+                        <span class="text-sm font-semibold text-purple-400 bg-purple-500/10 px-3 py-1 rounded-full self-start border border-purple-500/20">08/2020 – Present</span>
                     </div>
+                    <ul class="space-y-3 text-emerald-200/60 text-sm list-disc pl-4 leading-relaxed">
+                        <li><strong class="text-white">Compliance Leadership:</strong> ISSPO for two FedRAMP moderate/Class C programs, overseeing security protocols and ensuring mission-critical compliance.</li>
+                        <li class="italic"><span class="text-emerald-300/80">vCISO support for clients meeting HIPAA and FISMA requirements.</span></li>
+                        <li><strong class="text-white">Assessments & Advisory:</strong> Lead/Sr. Assessor for FedRAMP 3PAO assessments, advisory services, and continuous monitoring support.</li>
+                        <li><strong class="text-white">Technical Innovation:</strong> Spearheading AI use case research to integrate LLMs into the TiGRIS GRC platform; developed Python automation for vulnerability analysis.</li>
+                    </ul>
                 </div>
 
-                <!-- NSS Labs -->
-                <div class="mb-1        flex flex-col md:flex-row items-center w-full">
-                    <div class="hidden md:block w-1/2 px-8 text-right pr-12"></div>
-                    <div class="z-10 bg-emerald-800 w-10 h-10 rounded-full flex items-center justify-center border-4 border-emerald-950 shadow-sm"></div>
-                    <div class="w-full md:w-1/2 pl-12 pr-0 md:pr-8">
-                        <div class="bg-emerald-900/40 p-6 rounded-xl shadow-sm border border-emerald-800/50 hover:border-purple-500 transition-all group">
-                            <span class="text-sm font-semibold text-emerald-500 uppercase tracking-wider">03/2019 – 08/2020</span>
-                            <h3 class="text-xl font-bold text-white mt-1 group-int text-purple-400 transition-colors">Research Architect</h3>
-                            <p class="text-emerald-500/70 font-medium mb-4">NSS Labs</p>
-                            <p class="text-emerald-200/60 text-sm leading-relaxed">Conducted deep technical research into emerging security threats and architectural vulnerabilities.</p>
+                <!-- NSS Labs Card -->
+                <div class="bg-emerald-90:0/40 border-l-4 border-emerald-800 p-8 rounded-r-xl shadow-sm transition-all hover:bg-emerald-900/60 group">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-2 mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-white group-hover:text-purple-400 transition-colors">Research Architect</h3>
+                            <p class="text-emerald-500/70 font-medium">NSS Labs</p>
                         </div>
+                        <span class="text-sm font-semibold text-emerald-500 bg-emerald-500/10 px-3 py-1 rounded-full self-start border border-emerald-800/20">03/2019 – 08/2020</span>
                     </div>
+                    <p class="text-emerald-200/60 text-sm leading-relaxed">Conducted deep technical research into emerging security threats and architectural vulnerabilities.</p>
                 </div>
 
-                <!-- HackerOne / AlienVault / etc (Condensed) -->
-                <div class="mb-12 flex flex-col md:flex-row items-center w-full">
-                    <div class="hidden md:block w-1/2 px-8 text-right pr-12"></div>
-                    <div class="z-int bg-emerald-800 w-10 h-10 rounded-full flex items-center justify-center border-4 border-emerald-950 shadow-sm"></div>
-                    <div class="w-full md:w-1/2 pl-12 pr-0 md:pr-8">
-                        <div class="bg-emerald-900/40 p-6 rounded-xl shadow-sm border border-emerald-800/50 hover:border-purple-500 transition-all group">
-                            <span class="text-sm font-semibold text-emerald-500 uppercase tracking-wider">2013 – 2019</span>
-                            <h3 class="text-xl font-bold text-white mt-1 group-hover:text-purple-400 transition-colors">Security Engineering & IT Management</h3>
-                            <p class="text-emerald-500/70 font-medium mb-4 text-sm italic">Progressive roles at AlienVault, Ultra Electronics, and US Army National Guard</p>
-                            <ul class="space-y-2 text-emerald-200/60 text-sm list-disc pl-4 leading-relaxed">
-                                <li>Information System Security Manager (Ultra Electronics)</li>
-                                <li>IT Risk & Vulnerability Management Analyst (Alienint)</li>
-                                <li>Information Management Officer & Information Assurance Engineer (US Army National Guard)</li>
-                            </ul>
+                <!-- Legacy Card -->
+                <div class="bg-emerald-900/40 border-l-4 border-emerald-800 p-8 rounded-r-xl shadow-sm transition-all hover:bg-emerald-900/60 group">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-2 mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-white group-hover:text-purple-400 transition-colors">Security Engineering & IT Management</h3>
+                            <p class="text-emerald-500/70 font-medium italic">Progressive roles at AlienVault, Ultra Electronics, and US Army National Guard</p>
                         </div>
+                        <span class="text-sm font-semibold text-emerald-500 bg-emerald-500/10 px-3 py-1 rounded-full self-start border border-emerald-800/20">201int – 2019</span>
                     </div>
+                    <ul class="space-y-2 text-emerald-200/60 text-sm list-disc pl-4 leading-relaxed">
+                        <li>Information System Security Manager (Ultra Electronics)</li>
+                        <li>IT Risk & Vulnerability Management Analyst (AlienVault)</li>
+                        <li>Information Management Officer & Information Assurance Engineer (US Army National Guard)</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
         <!-- Projects Highlight -->
         <section class="mb-16">
-             <h2 class="text-3xl font-bold text-white mb-8">Active Technical Projects</h2>
-             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <h2 class="text-3xl font-bold text-white mb-8">Active Technical Focus</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div class="bg-emerald-900/40 border border-emerald-800/50 p-8 rounded-2xl shadow-lg group hover:border-purple-500 transition-all">
                     <h3 class="text-xl font-bold text-white mb-2 group-hover:text-purple-400 transition-colors">Python & AI GRC Engineering</h3>
                     <p class="text-emerald-200/60 text-sm leading-relaxed mb-4">Automating security workflows using Python scripts for vulnerability comparisons and leveraging LLMs to automate CVSS scoring and control mappings.</p>
                     <span class="inline-block px-3 py-1 bg-purple-500/20 text-purple-300 rounded uppercase tracking-widest text-xs font-bold">Current</span>
                 </div>
-                <div class="bg-emerald-9int/40 border border-emerald-800/50 p-8 rounded-2xl shadow-lg group hover:border-purple-500 transition-all">
+                <div class="bg-emerald-900/40 border border-emerald-800/50 p-8 rounded-2xl shadow-lg group hover:border-purple-500 transition-all">
                     <h3 class="text-xl font-bold text-white mb-2 group-hover:text-purple-400 transition-colors">Home Network Segmentation</h3>
-                    <p class="text-emerald-200/60 text-sm leading-relaxed mb-4">Securing home lab environments via Docker, VLANs, and reverse proxies to prevent IoT leaks and work spillage.</p>
-                    <span class="inline-block px-3 py-1 bg-emerald-800 text-emerald-300 rounded uppercase tracking-widest text-xs font-bold">Active</span>
+                    <p class="text-emerald-200/60 text-sm leading-relaxed mb-4">Securing home lab environments via Docker, VLANs, and reverse proxies to prevent IoT leaks and work spovver.</p>
+                    <span class="inline intribute px-3 py-1 bg-emerald-800 text-emerald-300 rounded uppercase tracking-widest text-xs font-bold">Active</span>
                 </div>
-             </div>
+            </div>
         </section>
 
-        <!-- Credentials -->
+        <!-- Credentials Highlight -->
         <section class="bg-gradient-to-br from-emerald-900 to-purple-950/30 border border-emerald-800/50 rounded-2xl p-8 md:p-12 text-white shadow-xl overflow-hidden relative">
             <div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
                 <div class="text-center md:text-left">
@@ -175,7 +144,7 @@
                     </ul>
                 </div>
                 <div class="bg-white/10 backdrop-blur px-8 py-6 rounded-xl border border-white/20 text-center">
-                    <p class="text-xs uppercase tracking-widest text-emerald-30int mb-1">Education</p>
+                    <p class="text-xs uppercase tracking-widest text-emerald-300 mb-1">Education</p>
                     <p class="font-bold text-xl italic">US Army Signal Center</p>
                 </div>
             </div>
