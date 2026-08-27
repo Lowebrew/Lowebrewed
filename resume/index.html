@@ -3,178 +3,196 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume | Andrew Lowe</title>
+    <title>Resume | Andrew Lowe - GRC Professional</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com overlap/css/styles.css"> <!-- Placeholder for future CSS -->
     <style>
-        @media print {
-            .no-print { display: none; }
-            body { background-color: white; }
-            .container { max-width: 100%; width: 100%; padding: 0; }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .timeline-line::before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #e5e7eb;
+        }
+        @media (min-width: 768px) {
+            .timeline-line::before {
+                left: 50%;
+                transform: translateX(-50%);
+            }
         }
     </style>
 </head>
-<body class="bg-slate-50 text-gray-900 font-sans leading-normal tracking-normal">
+<body class="bg-slate-50 text-slate-900 antialiased">
 
-    <!-- Navigation (Shadowed/Simplified for Resume) -->
-    <nav class="bg-white shadow-md no-print">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="../index.html" class="text-xl font-bold text-blue-800">Andrew Lowe</a>
-            <div class="flex space-x-6 items-center">
-                <a href="../index.html" class="text-gray-600 hover:text-blue-600 transition">Main</a>
-                <a href="../projects/index.html" class="text-gray-600 hover:text-blue-600 transition">Projects</a>
-                <a href="index.html" class="text-blue-600 font-semibold border-b-2 border-blue-600">Resume</a>
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center">
+                    <a href="../index.html" class="text-xl font-bold text-slate-900 tracking-tight">AL</a>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                    <a href="../index.html" class="text-slate-600 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Main</a>
+                    <a href="../projects/index.html" class="text-slate-600 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Projects</a>
+                    <a href="../blogs/index.html" class="text-slate-600 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Blogs</a>
+                    <a href="#" class="text-blue-600 px-3 py-2 text-sm font-medium border-b-2 border-blue-600">Resume</a>
+                </div>
             </div>
         </div>
     </nav>
 
-    <!-- Resume Content -->
-    <main class="container mx-auto px-6 py-12 max-w-4xl bg-white shadow-lg my-8 rounded-lg overflow-hidden">
+    <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         
-        <!-- Header / Contact Info -->
-        <header class="border-b border-gray-200 pb-8 mb-8 text-center md:text-left">
-            <h1 class="text-4xl font-extrabold text-gray-800">Andrew Lowe</h1>
-            <p class="text-blue-600 font-semibold text-lg mb-4">CISSP, CCSP</p>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-2 text-gray-600">
-                <p>📍 Forest, VA</p>
-                <p>📞 512-550-3383</p>
-                <p>📧 <a href="mailto:lowetide@outlook.com" class="hover:text-blue-600">lowetide@outlook.com</a></p>
-                <p>🔗 <a href="https://www.linkedin.com/in/Lowebrew" target="_blank" class="hover:text-blue-600">LinkedIn Profile</a></p>
+        <!-- Hero Section -->
+        <header class="text-center mb-16">
+            <h1 class="text-4xl md:text-profile-lg font-extrabold text-slate-900 tracking-tight sm:text-5xl">
+                Andrew Lowe
+            </h1>
+            <p class="mt-4 text-xl text-blue-600 font-semibold uppercase tracking-widest">
+                CISSP • CCSP • GRC Expert
+            </p>
+            <div class="mt-6 flex justify-center space-x-4 text-slate-500 text-sm">
+                <span>Forest, VA</span>
+                <span>•</span>
+                <a href="mailto:lowetide@outlook.com" class="hover:text-blue-600 transition-colors">lowetide@outlook.com</a>
+                <span>•</span>
+                <a href="https://www.linkedin.com/in/Lowebrew" target="_blank" class="hover:text-blue-600 transition-colors">LinkedIn</a>
             </div>
         </header>
 
-        <!-- Professional Profile -->
-        <section class="mb-10">
-            <h2 class="text-2xl font-bold text-gray-800 border-l-4 border-blue-600 pl-4 mb-4">Professional Profile</h2>
-            <p class="text-gray-700 leading-relaxed">
-                20+ years combined experience in system administration, information security, GRC, and IT consulting. Working knowledge of NIST, CSF, FedRAMP, CMMC, PCI-DSS, HIPAA, and ISO frameworks. Worked in nonprofit, private, public and defense/government sectors. Seeking subject matter expert, director, vice president, or C-level positions working with government or health orgs focused on NIST, FISMA, CSF, FedRAMP, CMMC and/or HIPAA frameworks, ideally to build new or expand on current programs.
+        <!-- Professional Profile Card -->
+        <section class="bg-white rounded-2xl shadow-sm border border-slate-200 p-8 mb-16">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Professional Profile</h2>
+            <p class="text-lg text-slate-600 leading-relaxed">
+                20+ years combined experience in system administration, information security, GRC, and IT consulting. 
+                Expertise spanning nonprofit, private, public, and defense/government sectors. 
+                Specializing in building and expanding robust compliance programs focused on 
+                <span class="text-blue-600 font-medium">NIST, FISMA, CSF, FedRAMP, CMMC,</span> and 
+                <span class="text-blue-600 font-medium">HIPAA</span> frameworks.
             </p>
-        </section>
-
-        <!-- Recent Work History -->
-        <section class="mb-10">
-            <h2 class="text-2xl font-bold text-gray-800 border-l-4 border-blue-600 pl-4 mb-6">Recent Work History</h2>
             
-            <!-- TalaTek -->
-            <div class="mb-8">
-                <div class="flex justify-between items-start mb-2">
-                    <div>
-                        <h3 class="text-xl font-bold text-gray-800">Manager, Frameworks and Certifications & Sr. Information Security Consultant</h3>
-                        <p class="text-blue-600 font-medium">TalaTek (subsidiary of CISO Global)</p>
-                    </div>
-                    <span class="text-gray-500 text-sm italic">08/2020 – Present</span>
-                </div>
-                <ul class="list-disc list-inside text-gray-700 space-y-2 ml-4">
-                    <li><strong>Leadership & Compliance Oversight:</strong> Serve as ISSPO for two FedRAMP moderate/Class C certified programs (TiGRIS), overseeing security protocols and ensuring compliance.</li>
-                    <li><strong>vCISO Services:</strong> Function as virtual vCISO supporting clients in meeting HIPAA security rules and FISMA requirements.</li>
-                    <li><strong>Assessments:</strong> Lead/Sr. Assessor for FedRAMP 3PAO assessments, advisory services, preparation, and continuous monitoring support.</li>
-                    <li><strong>Technical Innovation:</strong> Lead AI use case research efforts for integrating AI into the TiGRIS product; developed Python scripts to automate vulnerability analysis.</li>
-                    <li><strong>Framework Alignment:</strong> Spearheaded efforts to align TiGRIS with FedRAMP 20x Class C requirements.</li>
-                </ul>
+            <!-- Framework Badges -->
+            <div class="mt-8 flex flex-wrap gap-2">
+                <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium border border-blue-100">FedRAMP</span>
+                <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium border border-blue-100">NIST CSF</span>
+                <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium border border-blue-100">FISMA</span>
+                <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium border border-blue-100">CMMC</span>
+                <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium border border-blue-100">HIPAA</span>
+                <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium border border-blue-100">PCI-DSS</span>
+                <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium border border-blue-100">ISO</span>
             </div>
-
-            <!-- NSS Labs -->
-            <div class="mb-8">
-                <div class="flex justify-between items-start mb-2">
-                    <div>
-                        <h3 class="text-xl font<u>bold</u> text-gray-800">Research Architect</h3>
-                        <p class="text-blue-600 font-medium">NSS Labs</p>
-                    </div>
-                    <span class="text-gray-500 text-sm italic">03/2019 – 08/2020</span>
-                </div>
-            </div>
-
-            <!-- HackerOne -->
-            <div class="mb-8">
-                <div class="flex justify-between items-start mb-2">
-                    <div>
-                        <h3 class="text-xl font-bold text-gray-800">Program Manager</h3>
-                        <p class="text-blue-600 font-medium">HackerOne</p>
-                    </div>
-                    <span class="text-gray-500 text-sm italic">08/2018 – 02/2019</span>
-                </div>
-            </div>
-
-             <!-- AlienVault -->
-             <div class="mb-8">
-                <div class="flex justify-between items-to start mb-2">
-                    <div>
-                        <h3 class="text-xl font-bold text-gray-800">IT Risk & Vulnerability Management Analyst</h3>
-                        <p class="text-blue-600 font-medium">AlienVault</p>
-                    </div>
-                    <span class="text-gray-500 text-sm italic">07/2017 – 08/2018</span>
-                </div>
-            </div>
-
-            <!-- Ultra Electronics -->
-            <div class="mb-8">
-                <div class="flex justify-between items-start mb-2">
-                    <div>
-                        <h3 class="text-xl font-bold text-gray-800">Information System Security Manager & Operation System Engineer</h3>
-                        <p class="text-blue-600 font-medium">Ultra Electronics - ATS</p>
-                    </div>
-                    <span class="text-gray-500 text-sm italic">06/2013 – 07/2017</span>
-                </div>
-            </div>
-
+        </MM>
         </section>
 
-        <!-- Projects -->
-        <section class="mb-10">
-            <h2 class="text-2xl font-bold text-gray-800 border-l-4 border-blue-600 pl-4 mb-6">Key Projects</h2>
-            <div class="space-<u>y-6</u>">
-                <div class="bg-slate-50 p-4 rounded border border-gray-200">
-                    <h3 class="font-bold text-gray-800">Home Network Segmentation (2023 – Present)</h3>
-                    <p class="text-gray-700 text-sm italic mb-2">Security & Privacy Focus</p>
-                    <p class="text-gray-700">Segment portions of my network to prevent work spillage, IoT leaks and add security/privacy controls using Docker, firewalls, VLANs, VPN, and reverse proxy. Integrating LLMs and agents for management.</p>
+        <!-- Experience Timeline -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-slate-900 mb-12 text-center">Professional Experience</h2>
+            
+            <div class="relative timeline-line">
+                
+                <!-- TalaTek (Present) -->
+                <div class="mb-12 flex flex-col md:flex-row items-center w-full">
+                    <!-- Dot/Icon -->
+                    <div class="hidden md:block w-1/2 px-8 text-right pr-12"></div>
+                    <div class="z-10 bg-blue-600 w-10 h-10 rounded-full flex items-center justify-center border-4 border-white shadow-sm">
+                        <span class="text-white text-xs font-bold">✓</span>
+                    </div>
+                    <div class="w-full md:w-1/2 pl-12 pr-0 md:pr-8">
+                        <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 hover:border-blue-300 transition-all group">
+                            <span class="text-sm font-semibold text-blue-600 uppercase tracking-wider">08/2020 – Present</span>
+                            <h3 class="text-xl font-bold text-slate-900 mt-1 group-hover:text-blue-700 transition-colors">Manager, Frameworks & Certifications</h3>
+                            <p class="text-slate-500 font-medium mb-4">TalaTek (subsidiary of CISO Global)</p>
+                            <ul class="space-y-3 text-slate-600 text-sm list-disc pl-4 leading-relaxed">
+                                <li><strong>Compliance Leadership:</strong> ISSPO for two FedRAMP moderate/Class C programs, overseeing security protocols and ensuring mission-critical compliance.</li>
+                                <em>vCISO support for clients meeting HIPAA and FISMA requirements.</em></li>
+                                <li><strong>Assessments & Advisory:</strong> Lead/Sr. Assessor for FedRAMP 3PAO assessments, advisory services, and continuous monitoring support.</li>
+                                <li><strong>Technical Innovation:</strong> Spearheading AI use case research to integrate LLMs into the TiGRIS GRC platform; developed Python automation for vulnerability analysis.</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="bg-slate-50 p-4 rounded border border-gray-200">
-                    <h3 class="font-bold text-gray-800">Python and AI GRC Engineering (2025 – Present)</h3>
-                    <p class="text-gray-700 text-sm italic mb-2">Automation & Compliance</p>
-                    <p class="text-gray-700">Using Python to automate tasks like vulnerability comparisons, security checks, and CVSS scoring automation using AI/LLMs for FedRAMP 20x requirements.</p>
+
+                <!-- NSS Labs -->
+                <div class="mb-12 flex flex-col md:flex-row items-center w-full">
+                    <div class="hidden md:block w-1/2 px-8 text-right pr-12"></div>
+                    <div class="z-10 bg-slate-300 w-10 h-10 rounded-full flex items-center justify-center border-4 border-white shadow-sm"></div>
+                    <div class="w-full md:w-1/2 pl-12 pr-0 md:pr-8">
+                        <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 hover:border-blue-300 transition-all group">
+                            <span class="text-sm font-semibold text-slate-500 uppercase tracking-wider">03/2019 – 08/2020</span>
+                            <h3 class="text-xl font-bold text-slate-900 mt-1 group-hover:text-blue-700 transition-colors">Research Architect</h3>
+                            <p class="text-slate-50                text-slate-500 font-medium mb-4">NSS Labs</p>
+                            <p class="text-slate-600 text-sm leading-relaxed">Conducted deep technical research into emerging security threats and architectural vulnerabilities.</p>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- HackerOne / AlienVault / etc (Condensed) -->
+                <div class="mb-12 flex flex-col md:flex-row items-center w-full">
+                    <div class="hidden md:block w-1/2 px-8 text-right pr-12"></div>
+                    <div class="z-10 bg-slate-300 w-10 h-10 rounded-full flex items-center justify-center border-4 border-white shadow-sm"></div>
+                    <div class="w-full md:w-1/2 pl-12 pr-0 md:pr-8">
+                        <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 hover:border-blue-300 transition-all group">
+                            <span class="text-sm font-semibold text-slate-500 uppercase tracking-wider">2013 – 2019</span>
+                            <h3 class="text-xl font-bold text-slate-900 mt-1 group-hover:text-blue-700 transition-colors">Security Engineering & IT Management</h3>
+                            <p class="text-slate-500 font-scale mb-4 text-sm italic">Progressive roles at AlienVault, Ultra Electronics, and US Army National Guard</p>
+                            <ul class="space-y-2 text-slate-600 text-sm list-disc pl-4 leading-relaxed">
+                                <li>Information System Security Manager (Ultra Electronics)</li>
+                                <li>IT Risk & Vulnerability Management Analyst (AlienVault)</li>
+                                <li>Information Management Officer & Information Assurance Engineer (US Army National Guard)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
 
-        <!-- Education & Certifications -->
-        <section class="mb-10">
-            <h2 class="text-2xl font-bold text-gray-800 border-l-4 border-<u>blue-600</u> pl-4 mb-6">Education & Certifications</h2>
-            <div class="space-y-4">
-                <div>
-                    <p class="font-bold text-gray-800">CISSP, CCSP (Active)</p>
-                    <p class="text-sm text-gray-600">(ISC)² — Cred ID: 517671</p>
+        <!-- Projects Highlight -->
+        <section class="mb-16">
+             <h2 class="text-3xl font-bold text-slate-900 mb-8">Active Technical Projects</h2>
+             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-slate-900 text-white p-8 rounded-2xl shadow-lg group hover:bg-blue-950 transition-all">
+                    <h3 class="text-xl font-bold mb-2 group-hover:text-blue-400 transition-colors">Python & AI GRC Engineering</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Automating security workflows using Python scripts for vulnerability comparisons and leveraging LLMs to automate CVSS scoring and control mappings.</p>
+                    <span class="inline-block px-3 py-1 bg-blue-600 text-xs font-bold rounded uppercase tracking-widest">Current</span>
                 </div>
-                <div>
-                    <p class="font-bold text-gray-800">3PAO FedRAMP Technical Proficiency Activity (2024)</p>
-                    <p class="text-sm text-gray-600">Baltimore Cyber Range — Cert #: 1834</p>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 group hover:border-blue-400 transition-all">
+                    <h3 class="text-scale font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors">Home Network Segmentation</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">Securing home lab environments via Docker, VLANs, and reverse proxies to prevent IoT leaks and work spillage.</p>
+                    <span class="inline-block px-3 py-1 bg-slate-100 text-slate-600 text-xs font-bold rounded uppercase tracking-widest">Active</span>
                 </div>
-                <div>
-                    <p class="font-bold text-gray-800">Information Technology Specialist (25B) (2009)</p>
-                    <p class="text-sm text-gray-600">US Army Signal Center</p>
+             </div>
+        </section>
+
+        <!-- Credentials -->
+        <section class="bg-blue-600 rounded-2xl p-8 md:p-12 text-white shadow-xl overflow-hidden relative">
+            <div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
+                <div class="text-center md:text-left">
+                    <h2 class="text-3xl font-bold mb-4">Professional Credentials</h2>
+                    <ul class="space-y-2 text-blue-100 text-lg italic">
+                        <li>• CISSP (Certified Information System Security Professional)</li>
+                        <li>• CCSP (Certified Cloud Security Professional)</li>
+                        <li>• 3PAO FedRAMP Technical Proficiency</li>
+                    </ul>
+                </div>
+                <div class="bg-white/10 backdrop-blur px-8 py-6 rounded-xl border border-white/20 text-center">
+                    <p class="text-xs uppercase tracking-widest text-blue-200 mb-1">Education</p>
+                    <p class="font-bold text-xl italic">US Army Signal Center</p>
                 </div>
             </div>
         </section>
 
     </main>
 
-    <!-- Print/Download Link (Desktop only) -->
-    <div class="container mx-auto px-6 mb-12 no-print text-center">
-        <button onclick="window.print()" class="bg-blue-600 text-white px-8 py-3 rounded-full shadow-lg hover:bg-blue-700 transition duration-300 font-bold uppercase tracking-wider shadow-blue-200">
-            Print or Save as PDF
-        </button>
-    </div>
-
-    <footer class="bg-slate-800 text-white py-10 mt-20 no-print">
-        <div class="container mx-auto px-6 text-center">
-            <p class="mb-4">&copy; 2026 Andrew Lowe. All Rights Reserved.</p>
-            <div class="flex justify-center space-x-6">
-                <a href="../index.html" class="hover:text-blue-40<0xA0>0 transition">Home</a>
-                <a href="../projects/index.html" class="hover:text-blue-400 transition">Projects</a>
-                <a href="../blogs/index.html" class="hover:text-blue-400 transition">Blogs</a>
-            </div>
+    <footer class="bg-slate-100 border-t border-slate-200 py-12 mt-12">
+        <div class="max-w-5xl mx-auto px-4 text-center text-slate-500 text-sm">
+            <p>&copy; 2026 Andrew Lowe. Built for Performance and Security.</p>
         </div>
     </footer>
 
-    <script src="../assets/js/main.js"></script>
 </body>
 </html>
