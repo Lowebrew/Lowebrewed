@@ -1,12 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Selected security engineering and GRC automation projects by Andrew Lowe.">
     <title>Projects | Andrew Lowe</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="../assets/css/site.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/site.css">
 </head>
-<body><header class="site-header"><nav class="container nav" aria-label="Primary navigation"><a class="brand" href="../"><span class="brand-mark">AL</span><span class="brand-name">Andrew Lowe</span></a><button class="menu-button" id="mobile-menu-button" aria-expanded="false" aria-controls="site-nav">Menu</button><div class="nav-links" id="site-nav"><a href="../">About</a><a class="active" href="./">Projects</a><a href="../blogs/">Writing</a><a href="../resume/">Resume</a></div></nav></header>
-<main><header class="page-intro"><div class="container"><p class="eyebrow">Selected work / 2023—present</p><h1>Projects with a point of view.</h1><p>Small, useful systems for making security measurable, repeatable, and easier to operate.</p></div></header><section class="section"><div class="container"><div class="project-grid"><article class="project-card reveal"><div><div class="project-meta"><span class="project-number">01</span><span>Automation & AI</span></div><h2>Python and AI GRC Engineering</h2><p>Python workflows for vulnerability comparisons and security checks, with AI-assisted CVSS scoring and mappings between vulnerabilities and security controls. Current research includes PAIN measurements for FedRAMP 20x.</p></div><div class="tag-list"><span class="tag">Python</span><span class="tag">LLMs</span><span class="tag">FedRAMP 20x</span><span class="tag">CVSS</span></div></article><article class="project-card reveal delay"><div><div class="project-meta"><span class="project-number">02</span><span>Infrastructure</span></div><h2>Home Network Segmentation</h2><p>A privacy-minded home lab that isolates work, personal, and IoT traffic. The build combines Docker services, firewalls, switches, VLANs, VPNs, and reverse proxy controls, with agents now being explored for lab operations.</p></div><div class="tag-list"><span class="tag">Docker</span><span class="tag">VLANs</span><span class="tag">VPN</span><span class="tag">Network security</span></div></article></div></div></section></main>
-<footer class="site-footer"><div class="container footer-inner"><span>© 2026 Andrew Lowe</span><span>GRC, security, and systems thinking</span></div></footer><script src="../assets/js/main.js"></script></body></html>
+<body>
+    <header class="site-header">
+        <nav class="container nav" aria-label="Primary navigation">
+            <a class="brand" href="../">
+                <span class="brand-mark">AL</span>
+                <span class="brand-name">Andrew Lowe</span>
+            </a>
+            <button class="menu-button" id="mobile-menu-button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+            <div class="nav-links" id="site-nav">
+                <a href="../">About</a>
+                <a class="active" href="./">Projects</a>
+                <a href="../blogs/">Writing</a>
+                <a href="../resume/">Resume</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <header class="page-intro">
+            <div class="container">
+                <p class="eyebrow">Selected work / 2023—present</p>
+                <h1>Projects with a point of view.</h1>
+                <p>Small, useful systems for making security measurable, repeatable, and easier to operate.</p>
+            </div>
+        </header>
+
+        <section class="section">
+            <div class="container">
+                <div class="project-grid">
+                    <article class="project-card reveal">
+                        <div>
+                            <div class="project-meta">
+                                <span class="project-number">01</span>
+                                <span>Automation & AI</span>
+                            </div>
+                            <h2>Python and AI GRC Engineering</h2>
+                            <p>Python workflows for vulnerability comparisons and security checks, with AI-assisted CVSS scoring and mappings between vulnerabilities and security controls. Current research includes PAIN measurements for FedRAMP 20x.</p>
+                        </div>
+                        <div class="tag-list">
+                            <span class="tag">Python</span>
+                            <span class="tag">LLMs</span>
+                            <span class="tag">FedRAMP 20x</span>
+                            <span class="tag">CVSS</span>
+                        </div>
+                    </article>
+                    <article class="project-card reveal delay">
+                        <div>
+                            <div class="project-meta">
+                                <span class="project-number">02</span>
+                                <span>Infrastructure</span>
+                            </div>
+                            <h2>Home Network Segmentation</h2>
+                            <p>A privacy-minded home lab that isolates work, personal, and IoT traffic. The build combines Docker services, firewalls, switches, VLANs, VPNs, and reverse proxy controls, with agents now being explored for lab operations.</p>
+                        </div>
+                        <div class="tag-list">
+                            <span class="tag">Docker</span>
+                            <span class="tag">VLANs</span>
+                            <span class="tag">VPN</span>
+                            <span class="tag">Network security</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <span>© 2026 Andrew Lowe</span>
+            <span>GRC, security, and systems thinking</span>
+        </div>
+    </footer>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
